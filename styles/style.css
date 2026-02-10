@@ -315,9 +315,9 @@
   fill: var(--animation-fill-color);
 }
 
-.like-icon.is-liked .sparks {
+/* .like-icon.is-liked .sparks {
   fill: var(--animation-fill-color);
-}
+} */
 
 .like-icon.is-liked .heart {
   transform-origin: center;
@@ -325,6 +325,7 @@
 }
 
 .like-icon.is-liked .sparks {
+  fill: var(--animation-fill-color);
   transform-origin: center;
   animation: sparks 0.3s 0.3s ease-in 1;
 }
