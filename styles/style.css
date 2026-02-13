@@ -11,12 +11,12 @@
 */
 
 .page {
-  min-inline-size: 320px;
-  min-block-size: 100dvb;
   font-family: var(--font);
   background-image: var(--gradient);
   background-size: cover;
   background-attachment: fixed;
+  min-inline-size: 320px;
+  min-block-size: 100dvb;
   font-variation-settings: 'wght' var(--text-weight);
 }
 
@@ -47,10 +47,10 @@
   justify-items: center;
   align-content: center;
   gap: 20px;
-  min-block-size: var(--block-size);
-  inline-size: var(--header-inline-size);
   margin: 98px auto 96px;
   font-family: var(--accent-font);
+  min-block-size: var(--block-size);
+  inline-size: var(--header-inline-size);
 }
 
 .header-title {
@@ -69,9 +69,9 @@
 .image {
   display: block;
   width: 100%;
-  aspect-ratio: 1 / 1;
   object-fit: cover;
   object-position: center;
+  aspect-ratio: 1 / 1;
 }
 
 .section {
@@ -81,8 +81,8 @@
 
 .section_title {
   padding: 5px 10px;
-  font-variation-settings: 'wght' var(--text-bold-weight);
   font-size: var(--text-size);
+  font-variation-settings: 'wght' var(--text-bold-weight);
 }
 
 .section_image {
@@ -94,13 +94,13 @@
 
 .label {
   position: absolute;
-  z-index: 10;
-  right: 25px;
   top: 25px;
+  right: 25px;
+  z-index: 10;
   opacity: 0.5;
-  mix-blend-mode: hard-light;
-  font-size: var(--small-text-size);
   font-family: var(--accent-font);
+  font-size: var(--small-text-size);
+  mix-blend-mode: hard-light;
 }
 
 .section_text {
@@ -108,15 +108,15 @@
   flex-direction: column;
   gap: var(--text-padding);
   padding: var(--text-padding) var(--text-padding) 0 var(--text-padding);
-  line-height: 21px;
   font-size: var(--text-size);
+  line-height: 21px;
 }
 
 .section__buttons {
   display: flex;
   flex-direction: row;
-  gap: 7px;
   justify-content: end;
+  gap: 7px;
   padding: var(--text-padding);
 } 
 
@@ -141,8 +141,8 @@
   width: 100%;
   height: 100%;
   background-color: var(--contour-color);
-  transform: scaleX(0);
   transition: transform 0.5s ease-in-out;
+  transform: scaleX(0);
   transform-origin: left center;
 }
 
@@ -168,21 +168,21 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  gap: 8px;
   padding: 15px 0;
   inline-size: var(--save-inline-size);
-  gap: 8px;
 }
 
 .button {
-  transition: box-shadow 0.3s ease;
   position: relative;
   font-family: var(--accent-font);
   font-size: var(--small-text-size);
+  transition: box-shadow 0.3s ease;
 }
 
 .button:focus {
-  outline: none;
   box-shadow: 2px 2px 0 var(--contour-color);
+  outline: none;
 }
 
 .card__icon-button {
@@ -205,17 +205,17 @@
 .popup-open {
   display: flex;
   flex-direction: column;
-  padding: 28px;
   gap: 30px;
+  padding: 28px;
   font-family: var(--accent-font);
   font-size: var(--small-text-size);
 }
 
 .popup-open_layout {
   display: flex;
+  align-items: center;
   gap: 24px;
   block-size: 63px;
-  align-items: center;
 }
 
 .popup-open_layout p {
@@ -226,9 +226,9 @@
 
 .popup-open_button {
   display: flex;
+  flex-grow: 1;
   justify-content: center;
   align-items: center;
-  flex-grow: 1;
   min-block-size: 38px;
 }
 
@@ -238,8 +238,8 @@
 
 .dialog-floppy {
   display: block;
-  width: 39px;
   flex-shrink: 0;
+  width: 39px;
 }
 
 .save-floppy {
@@ -247,15 +247,15 @@
 }
 
 #dialog-id {
-  padding: 0;
   border: 0;
+  padding: 0;
 }
 
 /* Сердце */
 
 .sparks {
-  fill: var(--animation-fill-color);
   opacity: 0;
+  fill: var(--animation-fill-color);
 }
 
 .contour {
@@ -271,8 +271,8 @@
 }
 
 .heart:hover .core {
-  transition: fill 0.3s linear 0s;
   fill: var(--contour-color);
+  transition: fill 0.3s linear 0s;
 }
 
 .heart:hover .contour {
@@ -280,33 +280,33 @@
 }
 
 .heart:hover .main-body {
-  transition: fill 0.3s linear 0.05s;
   fill: var(--contour-color);
+  transition: fill 0.3s linear 0.05s;
 }
 
 .heart:active .core {
-  transition: fill 0.3s linear 0s;
   fill: var(--animation-fill-color);
+  transition: fill 0.3s linear 0s;
 }
 
 .heart:active .main-body {
-  transition: fill 0.3s linear 0.05s;
   fill: var(--animation-fill-color);
+  transition: fill 0.3s linear 0.05s;
 }
 
 .like-icon.is-liked .core {
-  transition: fill 0.3s linear 0s;
   fill: var(--animation-fill-color);
+  transition: fill 0.3s linear 0s;
 }
 
 .like-icon.is-liked .main-body {
-  transition: fill 0.3s linear 0.05s;
   fill: var(--animation-fill-color);
+  transition: fill 0.3s linear 0.05s;
 }
 
 .like-icon.is-liked .contour {
-  transition: fill 0.3s linear 0.06s;
   fill: var(--animation-fill-color);
+  transition: fill 0.3s linear 0.06s;
 }
 
 .like-icon.is-liked .heart {
@@ -334,17 +334,17 @@
   }
 
   .popup-open {
-    inline-size: 341px;
     padding: 28px 38px;
+    inline-size: 341px;
   }
 
   .footer-button {
   margin: 0px auto 83px;
-}
+  }
 }
 
 .filter__grayscale { 
-  filter: grayscale(0.6) 
+  filter: grayscale(0.6); 
 } 
  
 .filter__bright-pink { 
