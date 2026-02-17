@@ -215,13 +215,12 @@
   display: flex;
   align-items: center;
   gap: 24px;
-  block-size: 63px;
+  min-block-size: 63px;
 }
 
 .popup-open_layout p {
   line-height: 150%;
   max-inline-size: 230px;
-  max-block-size: 63px;
 }
 
 .popup-open_button {
@@ -325,12 +324,12 @@
     flex-direction: column;
   }
 
-  .header {
-    margin: 98px auto 115px;
-  }
-
   .save-floppy {
     width: 28px;
+  }
+
+  .header {
+    margin: 100px auto 100px;
   }
 
   .popup-open {

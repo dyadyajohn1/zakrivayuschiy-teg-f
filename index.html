@@ -283,7 +283,7 @@
           </button>
         </div>
       </section>
-      <div class="footer-button button">
+      <div class="footer-button">
         <button
           type="button"
           onclick="window['dialog-id'].showModal()"
@@ -306,13 +306,13 @@
             </svg>
             <p>Вставьте дискету, чтобы продолжить</p>
           </div>
+          <button
+            type="button"
+            class="button__text border popup-open_button button__decor button"
+            onclick="window['dialog-id'].close()">
+            <span class="button__text-decor button__text">ок</span>
+          </button>
         </div>
-        <button
-          type="button"
-          class="button__text border popup-open_button button__decor button"
-          onclick="window['dialog-id'].close()">
-          <span class="button__text-decor button__text">ок</span>
-        </button>
       </dialog>
     </main>
     <script src="./scripts/like.js"></script>
